@@ -40,16 +40,4 @@ public class Edge<Vertex> {
     public Double getWeight() {
         return weight;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true; // references compared
-
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Edge<?> otherEdge = (Edge<?>) o;
-
-        return Objects.equals(this.source, otherEdge.source) &&
-                Objects.equals(this.dest, otherEdge.dest);
-    }
 }
