@@ -28,7 +28,7 @@ public class WeightedGraph<Vertex> {
 
         if (hasEdge(source, dest)
                 || source.equals(dest))
-            return; // reject parallels & self-loops
+            return;
 
         map.get(source).add(new Edge<>(source, dest, weight));
 
