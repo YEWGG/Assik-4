@@ -29,7 +29,7 @@ public class DijkstraSearch<Vertex> extends Search<Vertex> {
 
                 if (getShortestDistance(neighbor) > newDistance) {
                     distances.put(neighbor, newDistance);
-                    edgeTo.put(neighbor, currentNode); // inverted adding
+                    edgeTo.put(neighbor, currentNode);
                     unsettledNodes.add(neighbor);
                 }
             }
